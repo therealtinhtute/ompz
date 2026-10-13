@@ -1,6 +1,6 @@
 providers:
   tinyModelDevice: default
-  fetch: auto
+  fetch: firecrawl
 symbolPreset: nerd
 composer:
   shape: pi
