@@ -1,0 +1,112 @@
+providers:
+  tinyModelDevice: default
+  fetch: firecrawl
+symbolPreset: nerd
+composer:
+  shape: pi
+theme:
+  dark: dark-monochrome
+setupVersion: 2
+statusLine:
+  preset: custom
+  separator: none
+  transparent: true
+  compactThinkingLevel: false
+  showHookStatus: false
+  leftSegments: []
+  rightSegments: []
+defaultThinkingLevel: high
+hideThinkingBlock: false
+personality: pragmatic
+contextPromotion:
+  enabled: true
+memory:
+  backend: local
+terminal:
+  showProgress: true
+display:
+  showTokenUsage: false
+  cacheMissMarker: true
+  shimmer: classic
+  hideToolActivity: false
+modelRoles:
+  smol: google-antigravity/gemini-3.7-flash
+  advisor: openai-codex/gpt-6-sol:high
+  vision: google-antigravity/gemini-3.7-flash
+  plan: xai-oauth/grok-4.6
+  default: google-antigravity/gemini-3.8-flash:high
+  web: web/tinyfish
+advisor:
+  enabled: true
+  syncBacklog: "off"
+  immuneTurns: 3
+compaction:
+  handoffSaveToDisk: false
+task:
+  maxRecursionDepth: 3
+  maxConcurrency: 32
+  enableEffort: true
+  eager: preferred
+  maxRuntimeMs: 0
+  isolation:
+    enabled: false
+    commits: ai
+skills:
+  enableSkillCommands: true
+commands:
+  enableClaudeUser: true
+  enableOpencodeProject: false
+dev:
+  autoqaConsent: granted
+startup:
+  quiet: true
+tui:
+  titleSpinner: braille
+  hyperlinks: auto
+vault:
+  enabled: false
+github:
+  enabled: true
+web_search:
+  enabled: true
+generate_image:
+  enabled: true
+computer:
+  enabled: false
+browser:
+  relay: false
+plan:
+  defaultOnStartup: false
+  autosave: true
+autolearn:
+  enabled: true
+retry:
+  fallbackChains:
+    web:
+      - web/firecrawl
+      - web/exa
+      - web/perplexity
+      - google/gemini-2.5-flash
+      - anthropic/claude-haiku-4-5
+      - openai-codex/gpt-5.6-luna
+      - xai/grok-4.5
+      - web/zai
+      - web/jina
+      - web/kagi
+      - web/tavily
+      - web/brave
+      - web/kimi
+      - web/parallel
+      - web/synthetic
+      - web/searxng
+      - web/startpage
+      - web/duckduckgo
+      - web/ecosia
+      - web/google
+      - web/mojeek
+      - web/public
+      - google-antigravity/gemini-2.5-flash
+      - openai-codex/gpt-5.6
+      - openai-codex/gpt-5.5
+      - xai-oauth/grok-4.5
+      - web/ollama
